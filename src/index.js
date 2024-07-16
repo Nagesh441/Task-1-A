@@ -6,8 +6,15 @@ function addTask() {
 
   if (taskValue === '') return;
 
-  const [taskText, count] = taskValue.split(/ (\d+)$/);
-  const taskCount = parseInt(count, 10) || 1;
+  // Split the task input into task text and count
+  const taskMatch = taskValue.match(/(.*?)(\d+)$/);
+  let taskText = taskValue;
+  let taskCount = 1;
+
+  if (taskMatch) {
+    taskText = taskMatch[1].trim();
+    taskCount = parseInt(taskMatch[2], 10);
+  }
 
   for (let i = 0; i < taskCount; i++) {
     createTask(taskText);
