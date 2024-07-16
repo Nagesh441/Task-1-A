@@ -25,8 +25,8 @@ You will need the following software installed on your machine:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/todo-app-with-counter.git
-    cd todo-app-with-counter
+    git clone https://github.com/Nagesh441/Task-1-A
+    cd Task-1-A
     ```
 
 2. Open the `index.html` file in your web browser to view the app.
